@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <link href="css/util.css" rel="stylesheet" type="text/css" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Gajraj+One&display=swap');
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <div class="logo">
+                    <img src="logoshort.png" height="30px">
+                </div>
+                <li><a style="text-decoration: none; color: white;" href="index.html">HOME</a></li>
+                <li><a style="text-decoration: none; color: white;" href="product.html">SERVICES</a></li>
+                <li><a style="text-decoration: none; color: white;" href="team.html">CONTACT US</a></li>
+                <div class="search allincenter">
+                    <input type="text" name="" id="" placeholder=" Search">
+                    <button class="btn"><img
+                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAn1BMVEWAAID///97AHvCoMJ1AHX59vl9AH14AHjIo8jPq8+EAISBAIHVtNX79fv//f/58fncv9zv4O/r1+vjy+PgxuDy5fL16vWycbK0ebTs2+yZPZmrYqueR566f7qPJ4/au9rr1euKGYrNoM3AicDJmcmhT6GpYamUMZSkV6SwbLC2ebbTsNOsbqyaTJqOK47BjsG3h7eYP5i/kb/Fm8WiYKIveJ3sAAAJiUlEQVR4nO2daXeiShCGmx4tIi6gqImJosQYt5lkMpn//9su6GwZqtteCqTn8p6Tk08h9dB7dVXBvFyDdjucTEZxHI+jTL1cx84H3VzSp8r0938+G3gyOjM+Xs2Gk7Ddbg9OaB7LfsLPKfNbrZYvE6+x/rY1Z4Eg+XL3Hp4IZykH9g8KAPyXfkY4Tf9JvrP8dUb4hV/bjDLlr1i7dW0jShX/1BC6robQfTWE7qshdF8NoftqCN1XQ+i+GkL31RC6r4bQfTWE7qshdF8NoftqCN1XQ+i+SiWEs8p6vJrKIQTgwII0uc+0TdKgyzi/Fik9IXAe3D+8dsajadjPFYbD1bLzup+nzL8CJTEh+N37RTT8Eebxl8LV4y71qw6KoCQECHaPExTul/rRIam2v9IRcja/hPejKXv7oMKGpCLkwe0Y75uYhuvqInhoCHmwGCrjnRvyKa0oxoWCEIKFUvf8qOkiqKQZ7QmBP4/0+XKN9lXMOdaEPOmZ8eUab8vvqpaEwG9Dc8Bs8TiU3ox2hJAebfhy9coOG7Qi5BvNGRTTcFduT7Uh9G/79oCeN1iUimhOCOyJgi/XY5mD0ZgQuh0qQM87dstDNCUEZrFIFBWVt/obEgKLKAE9b1UaoiFhl7QFc43p2c4yIwSFMRiOenkSxDFazSYqc26npEY0IvQvzqKjm4cEfqobJG8Pr9Glzc9TOYuGCSHfy02dZacG/8MCkGFy3n2I2tK/W/iUZL+s1SeEN1mn6/c2IDjdAiRr6SZoXkZH1SeEdCa2cfCUyA7vwIOD5Cg5KWNC1Sfkks328rJzggdrcRc4ljAUtQklg3A1V/KH8kD8jm7pEXUJIZ2KrHtS3V0CCLfs/YS8n+oSctFK2H/WeP18GwseMyafTzUJYSNwGY70XGcg3DPsqBtRtw3Hglev7f6ER/xJs+sSgmCaGTN9u0CwMbojnmw02xD3G8ZGxzsB4qRr8CyJtAgFK0VseETn+AHllbYRtQhhhVk0Nd2JQIDujkLakahDCDv0nZvPfrBFzxufSRG1CNFzvc2hB+/2M9I1UYMQtthOJLZ64bDEEEnPGBqEfI1ZY7fNgnvsrd1QNqIGYRdbKjqWxqDuginlgqFOCHNkw9a3vnUAbCf/TNhN1QnRTmrvW0Ef2yFcEtUJfWRLGtpfHEGCrBjDq7RhiswJjwTvGj2PvdAhKhNiy/1gS2AIzBEPHOF1lDIhfy3aYbcW/hQgp+El3XqhTohsaNYkb5ojC8aULhJNmRDbJdNcUMOm+GSPbkVUJYSkOFqojuNdxIVKt3FTJkRedI9osPiId/Er2VSjTIicAqgmPH5XfDbd1lSVENt6ULnFYF58dlQ94U3RinuqsRIUNxMjsslUuZcWfSp0/mkobtzCytuQFY+q05TMiOJK1K98LkUiE4YBmRFFD1efbEFUJiyeLMolpHu4ImG3uHlsCDWMaAitHl6LmaYYv1A9IeLYpFstWHE9rH61gOLumGzFB8RBEla+p8G8KW9UhG/FZ9N59pUJESfGAxXhc/HZ1e+8sdMT1UUfdm55r/58iJyAIyIrfOR65gon4G3Rpz+lMgLxYmyq33kHiBk0Uw16IULx4LOsvIk0YWjYJDa8gjcRsyMk2XhgfkoqJxfT8epjXs0DhVcfWSsor/LVCbGbGQq3PuIfsb1Z/iC72zWCKQ+NDqAM/dK4IV0ghGNrU3zsco1uvde65UaDCmwbEVtnPe/LVdqQMSwmdGX5tjkWbkJ5BawVT3NAjPH2Voj8AWtC0swLHcIUC7Of2kx7eNz/gDQUWqeXYleZ2f7bwhw8ppo2Elorri1BA9DNb4L9W+x5hLvuXHrxpWhA6ODeEJFv0Dc2umZ86Rsaxz41C8mAezx9hjIgiulGQQvyZSYmU4Mou2hEHMquGcmOh7x6Q/2YBUgEtSao0xF08y1EOQSJ5uDh94IstiV1XpAuYSJICprutKZ4fyN4Du1amEs7Kwif4L180VC2DWAhyrUkDtRnJrlrwiTunmpP5Qka+5xrZsJw4b/pEoomm0zTtUrqDMBemGQ5oF3sTzLIsMTOiT90OQMR/LkobS1vwhLKR5jkActy8eN9VzIeOcyFHfSkyCCB6oJMCAM0deZXO6xf0FRnAD89xJfqgS3JEU2y1dHA5T8Uxus5838XSsxz1X2ePndU6mWRIxpVHOC7S00xmBwXu23azRVsd5/XnZlqtaUl8Vg0qxrB0eN+ATOvChmGffVKdSdFtIiGlT9kE6q1aDuqaX2aUhFJW9G4xpAziOZ1ovhCc3xdCdGi1hffWRWjqwrRppoZ30pqgNgj1oAw293I92BWGhO1omVVQThYFqUb9ISjmaij2ta+5C+CKgtqit8EPlM6ROvqnjbNeKp8KfYa0IxFghq0PLiR138SaNAJTk4BSSvaX0+SEOaTqkH5tvH85xmr3I5KUykZ+JvmrDre/GG7L97I23dUqmrX4AfvyuOx30k+ejukHdWSkbAmO4fvkQJkO74LCt6cEjsqaV198NN9T1hHKlc4vnvhmNPRR7K7aBCpv40APtsulqi7Ioy+zbtc5KcqbSyW8H0L4H6Lb+/eb5bxbNLvT4ajqPP+9S1oyT+LIEG0GotlfaMkdz5lauXKfqt8v0PaiuaIdfrOTDljsU6E5SDWirAUxHoRyhBNPXA1I5QimrVi3QilM6pRK9aOUIa4/DcIZR31aIBYQ0JixDoSyjpqTxuxloQyxKPus+pJKO+oes1YU0LCVqwroRRRqxFrSyhDfNRBrC8hFWKNCWXuKQ3EOhPKEJ+UEWtNKOuor6qI9SaUXdusFRFrTph1VOH9omIWRN0JZWPxoIRYe0JJRx0o5VzVnzBDFHXUtspH6RwgZHwvQpwqFFRzgVDSUUeXs8mdIJQgXk5ecIOQ8Qf8ZlKhzpEjhIJkU5X0DFcI8elmqpBv5Qwh47tiR1X5eJI7hAii0uf2HCJkfPMx3DNW+nSIS4SMz/8MgxipJT06Rch48juiNVbM6nSLkEH6MxSyp/p1G8cIGQSnLNbwoHzT5hphXgooniw1vsnuHiEDCHQc+w4SaqohdF8NoftqCN1XQ+i+GkL31RC6r4bQfTWE7qshdF8NoftqCN1XQ+i+GkL31RC6r/8FIdmXqeqpVsy84bWNKFP8zmOe961VQt3QOiivtxnmhN7ybp6yc22As7ir+kXgt1o8ePn+OvVOhJkG7XY4HMVR1Ov1Op3OzUmfHNLJ4MzyY68XReN4Nmm32+dQuP8AfOaREQZkTh8AAAAASUVORK5CYII="
+                            height="20px"></button>
+                </div>
+            </ul>
+
+        </nav>
+    </header>
+    <div class="">
+        <h1>
+            10 Healthy Eating Tips for Senior Citezens
+        </h1>
+
+
+
+
+
+        
+        <ol>
+            <li><strong data-redactor-tag="strong">Choose nutrient-dense foods</strong>These are foods that give you
+                lots of nutrients without a lot of extra calories — like lean cuts of meat, fruit, eggs, or nuts. </li>
+            <li><strong data-redactor-tag="strong">Avoid empty calories.</strong>High-calorie foods like sugary drinks,
+                chips, and baked goods don’t have much nutritional value and can pack on unwanted pounds. </li>
+            <li><strong data-redactor-tag="strong">Keep healthy snacks on hand. </strong>This way,
+                if hunger strikes during a late night study session, you won’t be tempted by vending
+                machine candy, chips or ice cream. Possibilities include fresh or dried fruit,
+                pretzels, unbuttered popcorn, rice cakes or whole wheat crackers. If you have a
+                refrigerator, consider raw vegetables with low-fat yogurt or cottage cheese dip.
+            </li>
+            <li><strong data-redactor-tag="strong">Eat plenty of foods rich in calcium.</strong>
+                People in their early twenties need to be building up stores of calcium in their
+                bodies to prevent osteoporosis later in life. If you don’t like milk, try to include
+                ample amounts of low-fat yogurt, low-fat cheese and green leafy vegetables in your
+                diet.</li>
+            <li><strong data-redactor-tag="strong">If you need to lose weight, do it
+                    sensibly.</strong> Starvation and/or diets that offer a quick fix usually
+                backfire and are harmful. There is no truth to the theories that suggest eating
+                foods in any particular combination will promote weight loss. The only safe way to
+                lose weight, feel good while doing it, and keep it off, is to eat a balanced diet
+                and exercise.</li>
+            <li><strong data-redactor-tag="strong">Limit your sugar intake</strong> – Sugar provides
+                calories in your diet but few other nutrients, and it contributes significantly to
+                tooth decay. Use it sparingly and consider sweetening coffee, tea, cereal, and fruit
+                with diet sweeteners instead.</li>
+            <li><strong data-redactor-tag="strong">Visit the dining hall salad bar.</strong> The
+                dining hall salad bar can be either an asset or a detriment to your diet depending
+                on how you choose from it. Of course, leafy greens, raw vegetables, and fresh fruits
+                are beneficial. But, if you choose a lot of creamy dressings, bacon bits and
+                mayonnaise-based salads, the calories and fat may equal or even exceed those of a
+                burger and fries—so choose wisely!</li>
+            <li><strong data-redactor-tag="strong">Limit your alcohol intake.</strong> If you drink
+                alcohol, keep in mind that it supplies calories but no nutritional value. A light
+                beer, a glass of wine or an ounce of liquor each has about 100 calories. There may
+                also be health problems associated with drinking alcohol.</li>
+            <li><strong data-redactor-tag="strong">Ask your doctor about vitamins or supplements.</strong> While food is
+                the best way to get the nutrients you need, you may wonder if you should take vitamins or supplements
+                containing herbs and minerals. Ask your doctor. She will know if you need them. More isn’t necessarily
+                better as some can affect an existing medical condition or interfere with your medicines. </li>
+            <li><strong data-redactor-tag="strong">Enjoy your food. </strong>Food is a lot more than
+                nourishment for our bodies, so take the time to enjoy and savor it!</li>
+        </ol>
+    </div>
+    </main>
+</body>
+
+</html>
